@@ -10,8 +10,8 @@ body {
 nav {
   display: none;
   background: pink;
-  min-height: 100vh;
-  min-height: webkit-fill-available;
+  height: 100vh; /* This is for browsers that don't support custom properties */
+  height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   position: fixed;
   top: 0;
