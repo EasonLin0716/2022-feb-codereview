@@ -6,12 +6,12 @@ let scrollY = 0;
 menuBtn.addEventListener("click", () => {
   scrollY = window.pageYOffset;
   menu.style.display = "block";
-  document.body.style.overflow = "hidden";
+  document.body.classList.add("overhidden");
 });
 const closeMenuBtn = document.querySelector("button#close");
 closeMenuBtn.addEventListener("click", () => {
   menu.style.display = "none";
-  document.body.style.overflow = null;
+  document.body.classList.remove("overhidden");
   if (scrollY) {
       window.scrollTo(0, scrollY)
   }
