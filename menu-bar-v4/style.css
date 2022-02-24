@@ -36,6 +36,6 @@ main {
 
 .overhidden {
   overflow: hidden;
-  position: relative;
+  position: fixed;
   height: 100vh;
 }
