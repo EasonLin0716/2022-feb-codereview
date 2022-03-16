@@ -10,6 +10,8 @@ body {
 nav {
     display: none;
     background: pink;
+    height: 100dvh;
+    height: -webkit-fill-content;
     height: 100vh;
     width: 100vw;
     position: fixed;
