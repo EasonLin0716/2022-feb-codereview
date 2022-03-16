@@ -39,9 +39,9 @@ const scrollLocker =  {
             const x = -parseInt(document.body.style.left, 10);
         
             // Restore styles
-            document.body.style.position = previousBodyPosition.position;
-            document.body.style.top = previousBodyPosition.top;
-            document.body.style.left = previousBodyPosition.left;
+            document.body.style.position = this.previousBodyPosition.position;
+            document.body.style.top = this.previousBodyPosition.top;
+            document.body.style.left = this.previousBodyPosition.left;
         
             // Restore scroll
             window.scrollTo(x, y);
