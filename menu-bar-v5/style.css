@@ -1,0 +1,41 @@
+/* :root {
+  --window-height: 100vh;
+} */
+
+html,
+body {
+  margin: 0;
+}
+
+nav {
+    display: none;
+    background: pink;
+    min-height: 100%;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding-top: 16px;
+  background-color: silver;
+  flex-grow: 1;
+  font-size: 48px;
+}
+
+#open {
+  position: fixed;
+  width: 100%;
+}
+
+.overhidden {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
